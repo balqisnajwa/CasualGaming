@@ -1,0 +1,133 @@
+* {
+	box-sizing: border-box;
+}
+
+.header {
+	padding:80px;
+	text-align: center;
+	background-color: rgb(250,235,215);
+	color: white;
+}
+
+.header h1 {
+	font-size: 40px;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #bc8f8f;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: ivory;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+}
+
+.navbar a.right {
+	float: right;
+}
+
+.navbar a:hover {
+	background-color: #ffe4e1;
+	color: saddlebrown;
+}
+
+.navbar a.active {
+	background-color: #deb887;
+	color: white;
+}
+
+.container {
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.column {
+	float: left;
+	width: 40.40%;
+	padding: 5px;
+}
+
+.row2 {
+	content:"";
+	clear: both;
+	display: table;
+}
+
+.side {
+	flex: 30%;
+	background-color: #fffff0;
+	padding: 20px;
+}
+
+.col-sm-4 {
+	flex: 30%;
+	background-color: #fffff0;
+	padding: 20px;
+}
+
+.col-sm-8 {
+	flex: 70%;
+	background-color: oldlace;
+	padding: 20px;
+}
+
+.main {
+	flex: 70%;
+	background-color: oldlace;
+	padding: 20px;
+}
+
+p.groove {
+	border-style: groove;
+}
+
+.img {
+	width: 100%;
+	padding: 10px;
+	float: left;
+}
+
+.responsive {
+	width: 100%;
+	height: auto;
+}
+
+video {
+	width: 100%;
+	height: auto;
+	max-width: 520px;
+}
+
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: #d2b48c;
+}
+
+@media screen and (max-width: 700px) {
+	.row{
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.navbar a {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.column {
+		width: 100%;
+	}
+}
